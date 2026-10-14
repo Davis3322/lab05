@@ -58,21 +58,24 @@ nav a {
     font-style: italic;
 }
 
+#listTable {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: start;
+}
+
 #lists {
-    float: left;
-    width: 55%;
+    grid-column: 1;
 }
 
 #tables {
-    float: right;
-    width: 40%;
+    grid-column: 2;
     text-align: center;
 }
 
 table {
+    margin: 0 auto;
     border: 1px solid gray;
-    margin: 10px auto;
-    font-size: 11px;
 }
 
 th, td {
@@ -80,27 +83,32 @@ th, td {
     padding: 3px;
 }
 
+#linkImages {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: start;
+}
+
 #hyperlinks {
-    float: left;
-    width: 52%;
+    grid-column: 1;
     text-align: center;
 }
 
 #images {
-    float: right;
-    width: 43%;
+    grid-column: 2;
     text-align: center;
+    border: 1px solid lightgray;
+    padding: 5px;
 }
 
 #images img {
-    width: 125px;
+    width: 135px;
     height: auto;
 }
 
 footer {
-    clear: both;
     border-top: 3px double lightgray;
+    margin-top: 20px;
+    padding-top: 15px;
     text-align: center;
-    font-style: italic;
-    padding: 10px;
 }
